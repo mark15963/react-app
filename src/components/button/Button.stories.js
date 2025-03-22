@@ -1,5 +1,4 @@
-import { background } from "storybook/internal/theming";
-import Button from "./button";
+import { Button } from "./button";
 import { fn } from "@storybook/test";
 
 export default {
@@ -10,33 +9,40 @@ export default {
   },
   tags: ["autodocs"],
   argTypes: {
-    background: { control: "color" },
-    color: { control: "color" },
-    padding: { constrol: "text" },
     variant: {
-      options: ["primary", "secondary"],
+      options: ["primary", "secondary", "tertiary"],
+      control: { type: "radio" },
     },
+    disabled: { control: "boolean" },
   },
   args: { onClick: fn() },
 };
 
 export const Button1 = {
   args: {
-    lable: "вариант 1",
+    label: "вариант 1",
     variant: "primary",
   },
 };
 
 export const Button2 = {
   args: {
-    lable: "вариант 2",
+    label: "вариант 2",
     variant: "secondary",
   },
 };
 
 export const Button3 = {
   args: {
-    lable: "вариант 3",
-    variant: "thirtiary",
+    label: "вариант 3",
+    variant: "tertiary",
+  },
+};
+
+export const Button4 = {
+  args: {
+    label: "вариант 4",
+    variant: "primary",
+    disabled: true,
   },
 };

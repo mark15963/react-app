@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "axios": "^1.8.1",
+    "bootstrap-icons": "^1.11.3",
+    "classnames": "^2.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.2.0"
@@ -23,7 +25,8 @@
     "@storybook/addon-essentials": "^8.6.6",
     "@storybook/addon-onboarding": "^8.6.6",
     "@storybook/blocks": "^8.6.6",
-    "@storybook/experimental-addon-test": "^8.6.6",
+    "@storybook/builder-vite": "^8.6.7",
+    "@storybook/experimental-addon-test": "^8.6.7",
     "@storybook/react": "^8.6.6",
     "@storybook/react-vite": "^8.6.6",
     "@storybook/test": "^8.6.6",

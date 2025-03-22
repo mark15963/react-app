@@ -1,16 +1,12 @@
-import { Main } from './pages/main'
-import { List } from './pages/list'
-import { Item } from './pages/item'
-import { Route, Routes, useNavigate } from 'react-router-dom';
+import { Button } from './components/button/button'
+import { Checkbox } from './components/checkbox/index'
 
 export const App = () => {
-    let navigate = useNavigate();
     return (
-        <Routes>
-            <Route path='/' element={< Main onClick={() => navigate("/list")} />} />
-            <Route path='/list' element={<List onClick={() => navigate("/item")} />} />
-            <Route path='/item' element={< Item onClick={() => navigate("/")} />} />
-        </Routes>
+        <div>
+            <Button label="Кнопка" variant='primary' />
+            <Checkbox label="коробка" />
+        </div>
     )
 }
 

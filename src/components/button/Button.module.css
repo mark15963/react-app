@@ -1,0 +1,44 @@
+.button {
+    padding: 20px 32px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.primary{
+    background: #605DEC;
+    border: 1px solid #605DEC;
+    color: #FFFFFF;
+    
+    &:hover{
+        background: #3D3ACE;
+    }
+    
+    &:focus{
+        background: #3D3ACE;
+    }
+
+    &:visited{
+        background: #3D3ACE;
+    }
+
+    &:active{
+        background: #24227c;
+    }
+}
+
+.secondary{
+    background: transparent;
+    border: 1px solid #605DEC;
+    color: #605DEC;
+}
+
+.tertiary{
+    background: transparent;
+    border: 1px solid transparent;
+    color: #605DEC;
+}
+.disabled{
+    background: #F4F4F4;
+    color: #C5C0D8;
+    border-color: transparent;
+}

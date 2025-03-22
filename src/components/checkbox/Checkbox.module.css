@@ -1,0 +1,67 @@
+.checkbox{
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #BDBCDB;
+    cursor: pointer;
+
+    &:hover{
+        border: 1px solid #605DEC   
+    }
+
+    &:active{
+        background: #5f5dec28;
+    }
+
+    &:focus{
+        border-color: #3D3AFF;
+    }
+}
+
+.activeBorder{
+    border: 1px solid #605DEC
+}
+
+.checked{
+    background: #7861FF;
+}
+
+.focused{
+    &:focus{
+        border: 2px solid #F845FC; 
+        border-radius:6px;
+    }
+}
+
+.disabled{
+    background: #F4F3FE;
+    cursor: default;
+    border-color: transparent;
+
+    &:hover{
+        border-color: transparent;    
+    }
+
+    path{
+        stroke: #C5C0D6;
+        fill: #C5C0D6;
+    }
+    
+}
+
+.error{
+    border: 1px solid #F93232;
+
+    &:hover{
+        border: 1px solid #F93232;
+    }
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
